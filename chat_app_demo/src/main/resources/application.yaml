@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: websocket_tutorial
+  datasource:
+    url: "jdbc:mysql://localhost:3306/chat_app"
+    username: root
+    password: 03092003
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /chat-app
+
+jwt:
+  signer-key: "6lhXE9HRxzm7EyIVWdl0XPx9eoGdgXm8VNfpaBQ1dUDpZF6NcF8z4fDAO15JFAdF"
+  valid-duration: 86400 # in second
+  refreshable-duration: 864000
